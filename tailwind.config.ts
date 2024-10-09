@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 
 const config: Config = {
   content: [
@@ -21,7 +23,16 @@ const config: Config = {
         "neon-green": "var(--neon-green)",
       },
       fontFamily: {
-        "kumbh-sans": ["KumbhSansFont", "sans-serif"],
+        'kumbh-sans': ['KumbhSansFont', ...fontFamily.sans],
+        'koulen': ['KoulenFont', ...fontFamily.sans],
+        'jaldi': ['JaldiFont', ...fontFamily.sans],
+        'lalezar': ['LalezarFont', ...fontFamily.sans],
+        'langar': ['LangarFont', ...fontFamily.sans],
+        'lemon': ['LemonFont', ...fontFamily.sans],
+        'merienda': ['MeriendaFont', ...fontFamily.sans],
+        'mervale-script': ['MervaleScriptFont', ...fontFamily.sans],
+        'metal': ['MetalFont', ...fontFamily.sans],
+        'pacifico': ['PacificoFont', ...fontFamily.sans],
       },
     },
   },

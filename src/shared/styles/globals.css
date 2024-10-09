@@ -17,35 +17,107 @@
     --neon-green: #94E400;
 }
 
-/* Regular */
+/* KumbhSans Light */
 @font-face {
     font-family: 'KumbhSansFont';
-    src: url('/public/fonts/KumbhSans-Regular.ttf') format('ttf');
+    src: url('/fonts/KumbhSans/KumbhSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* KumbhSans Regular */
+@font-face {
+    font-family: 'KumbhSansFont';
+    src: url('/fonts/KumbhSans/KumbhSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
-/* Medium */
+/* KumbhSans Semibold */
 @font-face {
     font-family: 'KumbhSansFont';
-    src: url('/public/fonts/KumbhSans-Medium.ttf') format('ttf');
+    src: url('/fonts/KumbhSans/KumbhSans-SemiBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Koulen Regular */
+@font-face {
+    font-family: 'KoulenFont';
+    src: url('/fonts/Koulen/Koulen-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Jaldi Bold */
+@font-face {
+    font-family: 'JaldiFont';
+    src: url('/fonts/Jaldi/Jaldi-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Jaldi Regular */
+@font-face {
+    font-family: 'JaldiFont';
+    src: url('/fonts/Jaldi/Jaldi-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Lalezar Regular */
+@font-face {
+    font-family: 'LalezarFont';
+    src: url('/fonts/Lalezar/Lalezar-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Langar Regular */
+@font-face {
+    font-family: 'LangarFont';
+    src: url('/fonts/Langar/Langar-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Lemon Regular */
+@font-face {
+    font-family: 'LemonFont';
+    src: url('/fonts/Lemon/Lemon-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Merienda Medium */
+@font-face {
+    font-family: 'MeriendaFont';
+    src: url('/fonts/Merienda/Merienda-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
-/* Bold */
+/* MervaleScript Regular */
 @font-face {
-    font-family: 'KumbhSansFont';
-    src: url('/public/fonts/KumbhSans-Bold.ttf') format('ttf');
-    font-weight: 700;
+    font-family: 'MervaleScriptFont';
+    src: url('/fonts/MervaleScript/MervaleScript-Regular.otf') format('otf');
+    font-weight: 400;
     font-style: normal;
 }
 
-/* Black */
+/* Metal Regular */
 @font-face {
-    font-family: 'KumbhSansFont';
-    src: url('/public/fonts/KumbhSans-Black.ttf') format('ttf');
-    font-weight: 900;
+    font-family: 'MetalFont';
+    src: url('/fonts/Metal/Metal-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Pacifico Regular */
+@font-face {
+    font-family: 'PacificoFont';
+    src: url('/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -58,7 +130,6 @@ html {
 }
 
 body {
-    font-family: 'KumbhSansFont';
     font-size: 1.6rem;
     line-height: 2;
 }

@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="custom-scrollbar">{children}</body>
+      <body className={`custom-scrollbar`}>{children}</body>
     </html>
   );
 }
