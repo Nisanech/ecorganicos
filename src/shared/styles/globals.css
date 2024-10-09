@@ -3,25 +3,87 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --white: #FFFFFF;
+    --black: #202020;
+
+    --light-gray: #EFEFEF;
+    --medium-gray: #F1F1F1;
+    --dark-gray: #969696;
+
+    --light-green: #4EBC57;
+    --medium-green: #50B256;
+    --dark-green: #1F873C;
+    --darker-green: #183921;
+    --neon-green: #94E400;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Regular */
+@font-face {
+    font-family: 'KumbhSansFont';
+    src: url('/public/fonts/KumbhSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'KumbhSansFont';
+    src: url('/public/fonts/KumbhSans-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'KumbhSansFont';
+    src: url('/public/fonts/KumbhSans-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Black */
+@font-face {
+    font-family: 'KumbhSansFont';
+    src: url('/public/fonts/KumbhSans-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: 'KumbhSansFont';
+    font-size: 1.6rem;
+    line-height: 2;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--medium-gray);
+    border-radius: 6px;
+    border: 3px solid var(--medium-gray);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--medium-green);
 }

@@ -9,8 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "eco-white": "var(--white)",
+        "eco-black": "var(--black)",
+        "light-gray": "var(--light-gray)",
+        "medium-gray": "var(--medium-gray)",
+        "dark-gray": "var(--dark-gray)",
+        "light-green": "var(--light-green)",
+        "medium-green": "var(--medium-green)",
+        "dark-green": "var(--dark-green)",
+        "darker-green": "var(--darker-green)",
+        "neon-green": "var(--neon-green)",
+      },
+      fontFamily: {
+        "kumbh-sans": ["KumbhSansFont", "sans-serif"],
       },
     },
   },
