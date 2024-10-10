@@ -21,6 +21,8 @@ const config: Config = {
         "dark-green": "var(--dark-green)",
         "darker-green": "var(--darker-green)",
         "neon-green": "var(--neon-green)",
+        "light-yellow": "var(--light-yellow)",
+        "dark-orange": "var(--dark-orange)",
       },
       fontFamily: {
         'kumbh-sans': ['KumbhSansFont', ...fontFamily.sans],
