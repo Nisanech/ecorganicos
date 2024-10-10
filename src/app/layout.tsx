@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import "@/shared/styles/globals.css";
 import "@/shared/styles/normalize.css";
+import Header from "@/presentation/components/Header";
+import Footer from "@/presentation/components/Footer";
 
 export const metadata: Metadata = {
   title: "Ecorganicos | Nosotros",
@@ -15,7 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`custom-scrollbar`}>{children}</body>
+      <body className={`custom-scrollbar`}>
+        <Header></Header>
+
+        <main>{ children }</main>
+
+        <Footer></Footer>
+      </body>
     </html>
   );
 }
