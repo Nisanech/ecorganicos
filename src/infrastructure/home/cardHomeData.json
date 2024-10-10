@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "icon": "apple-icon-blanco.svg",
+    "title": "Producción Responsable",
+    "description": "Ofrecemos alimentos y materias primas orgánicas con enfoque en trazabilidad y calidad para garantizar productos saludables y sostenibles."
+  },
+  {
+    "id": 2,
+    "icon": "productos-icon-blanco.svg",
+    "title": "Diversidad de Productos",
+    "description": "Comercializamos una variedad de productos como panela, frutas deshidratadas, pulpas y café orgánico, adaptándonos a las necesidades del mercado."
+  },
+  {
+    "id": 3,
+    "icon": "consultoria-icon-blanco.svg",
+    "title": "Consultoría Especializada",
+    "description": "Ofrecemos alimentos y materias primas orgánicas con enfoque en trazabilidad y calidad para garantizar productos saludables y sostenibles."
+  },
+  {
+    "id": 4,
+    "icon": "naturaleza-icon-blanco.svg",
+    "title": "Compromiso Naturaleza",
+    "description": "Trabajamos con materias primas naturales, cuidando cada etapa del proceso para preservar la esencia de la biodiversidad colombiana."
+  }
+]
