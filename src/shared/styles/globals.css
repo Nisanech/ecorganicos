@@ -124,6 +124,13 @@
     font-style: normal;
 }
 
+/* Josefin Slab */
+@font-face {
+    font-family: Josefin-Slab;
+    src: url("/fonts/JosefinSlab/JosefinSlab-BoldItalic.ttf");
+    font-style: normal;
+}
+
 html {
     box-sizing: border-box;
 }
