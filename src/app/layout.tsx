@@ -4,7 +4,6 @@ import React from "react";
 import "@/shared/styles/globals.css";
 import "@/shared/styles/normalize.css";
 
-import Header from "@/presentation/components/Header";
 import Footer from "@/presentation/components/Footer";
 
 export const metadata: Metadata = {
@@ -16,7 +15,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`custom-scrollbar`}>
-        <Header></Header>
 
         <main>{children}</main>
 
