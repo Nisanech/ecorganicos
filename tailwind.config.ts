@@ -23,7 +23,7 @@ const config: Config = {
         "dark-orange": "var(--dark-orange)",
       },
       fontFamily: {
-        'kumbh-sans': ['KumbhSansFont', ...fontFamily.sans],
+        'kumbh': ['KumbhSansFont', ...fontFamily.sans],
         'koulen': ['KoulenFont', ...fontFamily.sans],
         'jaldi': ['JaldiFont', ...fontFamily.sans],
         'lalezar': ['LalezarFont', ...fontFamily.sans],
