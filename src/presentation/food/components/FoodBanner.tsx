@@ -7,7 +7,7 @@ export default function FoodBanner() {
         <div className={`flex flex-col items-center w-full`}>
           <h1 className={`text-center w-full m-0 font-koulen text-[#A36752] text-2xl md:text-4xl lg:text-5xl`}>
             Descubre el dulce sabor <br/>
-             <span className={`font-mervale-script font-normal text-2xl text-[#343434] md:text-4xl lg:text-5xl`}>De la panela organica</span></h1>
+             <span className={`font-mervale-script font-normal text-2xl text-[#343434] md:text-4xl lg:text-5xl`}>De la panela orgánica</span></h1>
 
           <div className={`flex mt-10 items-center gap-5 md:mt-[90px]`}>
             <p className={`font-koulen text-xl text-[#A36752] lg:text-3xl`}>Usos:</p>
