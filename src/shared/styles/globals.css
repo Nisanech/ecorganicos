@@ -103,7 +103,7 @@
 /* MervaleScript Regular */
 @font-face {
     font-family: 'MervaleScriptFont';
-    src: url('/fonts/MervaleScript/MervaleScript-Regular.otf') format('otf');
+    src: url('/fonts/MervaleScript/MervaleScript-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }

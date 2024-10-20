@@ -6,12 +6,16 @@ import Link from "next/link";
 
 interface MenuItems {
   name: string;
+  items: SubItems[]
+}
+
+interface SubItems {
+  name: string;
   href: string;
-  items: string[];
 }
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [currentLanguage, setCurrentLanguage] = useState('Español');
 
@@ -24,13 +28,21 @@ export default function Header() {
   const menuItems: MenuItems[] = [
     {
       name: "Alimentos",
-      href: "/food",
-      items: ["Panela orgánica", "Frutas deshidratadas", "Pulpa de fruta pasteurizada", "Pulpa de fruta congelada", "Cafe", "Miel de yacón"]
+      items: [
+        { name: "Panela Orgánica", href: "/food/panela-organica"},
+        { name: "Frutas Deshidratadas", href: "/food/frutas-deshidratadas"},
+        { name: "Pulpa de Fruta Pasteurizada", href: "/food/pulpa-fruta-pasteurizada"},
+        { name: "Pulpa de Fruta Congelada", href: "/food/pulpa-fruta-congelada"},
+        { name: "Café", href: "/food/cafe"},
+        { name: "Miel de Yacón", href: "/food/miel-yacon"},
+      ]
     },
     {
       name: "Materias primas",
-      href: "/raw-materials",
-      items: ["Extracto de ipecacuana", "Miel invertida de caña"]
+      items: [
+        { name: "Extracto de Ipecacuana", href: "/raw-materials/extracto-ipecacuana"},
+        { name: "Miel Invertida de Caña", href: "/raw-materials/miel-invertida"},
+      ]
     },
   ]
 
@@ -57,15 +69,15 @@ export default function Header() {
               {/* Languages */}
               <div className={`flex justify-center`}>
                 <div className={`absolute`}>
-                  <Image src={`assets/common/icons/background-language.svg`} alt={`row`} width={300} height={40} />
+                  <Image src={`/assets/common/icons/background-language.svg`} alt={`row`} width={300} height={40} />
                 </div>
 
                 <button className={`relative top-1.5 flex items-center gap-4 focus:outline-none`} onClick={() => toggleDropdown('language')}>
-                  <Image src={`assets/common/icons/flag-spanish.svg`} alt={`Spanish`} width={20} height={20} />
+                  <Image src={`/assets/common/icons/flag-spanish.svg`} alt={`Spanish`} width={20} height={20} />
 
                   <span className={`text-eco-white font-jaldi font-normal`}>{currentLanguage}</span>
 
-                  <Image src={`assets/common/icons/row-white-menu-icon.svg`} alt={`row`} width={13} height={13} />
+                  <Image src={`/assets/common/icons/row-white-menu-icon.svg`} alt={`row`} width={13} height={13} />
                 </button>
 
                 {/* Languages dropdown */}
@@ -111,18 +123,18 @@ export default function Header() {
                       className="flex items-center m-0 p-0 gap-2 font-jaldi font-bold text-[20px] text-dark-gray focus:outline-none"
                     >
                       {item.name}
-                      <Image src={`assets/common/icons/row-menu-icon.svg`} alt={`row`} width={13} height={13} />
+                      <Image src={`/assets/common/icons/row-menu-icon.svg`} alt={`row`} width={13} height={13} />
                     </button>
 
                     {openDropdown === item.name && (
                       <div className="absolute z-10 w-48 py-2 mt-2 bg-white rounded-md shadow-xl">
                         {item.items.map((subItem) => (
                           <Link
-                            key={subItem}
-                            href={`${item.href}/${subItem.toLowerCase()}`}
-                            className="block px-4 py-2 font-jaldi font-bold text-[20px] text-dark-gray hover:bg-gray-100"
+                            key={subItem.name}
+                            href={subItem.href}
+                            className="block px-4 py-2 font-jaldi font-normal text-[16px] text-dark-gray hover:bg-gray-100"
                           >
-                            {subItem}
+                            {subItem.name}
                           </Link>
                         ))}
                       </div>
@@ -130,9 +142,9 @@ export default function Header() {
                   </div>
                 ))}
 
-                <Link href="/noticias" className="font-jaldi font-bold text-[20px] text-dark-gray">Noticias</Link>
+                <Link href="/news" className="font-jaldi font-bold text-[20px] text-dark-gray">Noticias</Link>
 
-                <Link href="/contacto" className="font-jaldi font-bold text-[20px] text-dark-gray">Contacto</Link>
+                <Link href="/contact" className="font-jaldi font-bold text-[20px] text-dark-gray">Contacto</Link>
               </nav>
             </div>
           </div>
