@@ -1,0 +1,36 @@
+[
+  {
+    "id": "panela-organica",
+    "productImages": [
+      "/assets/food/images/panela-organica/panela-1.jpg",
+      "/assets/food/images/panela-organica/panela-2.jpg",
+      "/assets/food/images/panela-organica/panela-3.jpg",
+      "/assets/food/images/panela-organica/panela-4.jpg",
+      "/assets/food/images/panela-organica/panela-5.jpg",
+      "/assets/food/images/panela-organica/panela-6.jpg",
+      "/assets/food/images/panela-organica/panela-7.jpg",
+      "/assets/food/images/panela-organica/panela-8.jpg",
+      "/assets/food/images/panela-organica/panela-9.jpg",
+      "/assets/food/images/panela-organica/panela-10.jpg",
+      "/assets/food/images/panela-organica/panela-11.jpg",
+      "/assets/food/images/panela-organica/panela-12.jpg"
+    ],
+    "productName": "Panela pulverizada orgánica",
+    "description": "Producto alimenticio elaborado a partir de la caña de azúcar 100% orgánica, sin adición de químicos, pesticidas, aditivos. Este producto puede ser utilizado como endulzante natural saludable y alimenticio tomando en cuenta los minerales y vitaminas que contiene la Panela, también puede ser usada como materia prima en la elaboración de diversos productos en la industria alimenticia.<br>La panela es una gran fuente de energía para el cuerpo humano, nos aporta nutrientes esenciales para el organismo y es rico en vitaminas A, B, C, D, y E. La panela sin sabor se utiliza como endulzante natural en diferentes comidas y bebidas."
+  },
+  {
+    "id": "frutas-deshidratadas",
+    "productImages": [
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-1.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-2.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-3.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-4.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-5.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-6.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-7.jpg",
+      "/assets/food/images/frutas-deshidratadas/fruta-desidratada-8.jpg"
+    ],
+    "productName": "Frutas deshidratadas",
+    "description": "Las Frutas deshidratadas se obtienen mediante un proceso en el cual la fruta se somete a proceso de deshidratación en donde se extrae el agua contenida mediante un proceso de exposición al calor, conservando su sabor y propiedades naturales.<br>Este producto no contiene aditivos ni preservantes.<br>Puede ser consumido como Snack, o como materia prima en la elaboración de diferentes productos en la industria alimentaria.<br>En la industria alimenticia, la fruta deshidratada se utiliza para la elaboración de helados, salsas, panadería, pastelería, y como snacks entre otros.<br>Sabores de frutas deshidratadas: Imagenes (Uchuva, Pitahaya, Banano, Piña, Maracuyá, Durazno, Manzana, Mango, Fresa)."
+  }
+]
