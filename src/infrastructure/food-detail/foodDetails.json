@@ -32,5 +32,86 @@
     ],
     "productName": "Frutas deshidratadas",
     "description": "Las Frutas deshidratadas se obtienen mediante un proceso en el cual la fruta se somete a proceso de deshidratación en donde se extrae el agua contenida mediante un proceso de exposición al calor, conservando su sabor y propiedades naturales.<br>Este producto no contiene aditivos ni preservantes.<br>Puede ser consumido como Snack, o como materia prima en la elaboración de diferentes productos en la industria alimentaria.<br>En la industria alimenticia, la fruta deshidratada se utiliza para la elaboración de helados, salsas, panadería, pastelería, y como snacks entre otros.<br>Sabores de frutas deshidratadas: Imagenes (Uchuva, Pitahaya, Banano, Piña, Maracuyá, Durazno, Manzana, Mango, Fresa)."
+  },
+  {
+    "id": "pulpa-fruta-pasteurizada",
+    "productImages": [
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-1.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-2.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-3.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-4.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-5.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-6.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-7.jpg",
+      "/assets/food/images/pulpa-fruta-pasteurizada/pulpa-fruta-pasteurizada-8.jpg"
+    ],
+    "productName": "Pulpas de fruta pasteurizadas",
+    "description": "Son obtenidas mediante la extracción y tamizado de la fracción comestible de las frutas frescas, sanas y maduras. Ofrecemos pulpas e todas las frutas que se cultivan en nuestro país en presentación pasterizada sin azúcar o con azúcar.<br>La pulpa de fruta pasteurizada se utiliza como materia prima para preparación de jugos, batidos, postres y mermeladas entre otros.<br>Productos 100% natural sin endulzantes, aditivos, preservantes ni colorantes.<br>Sabores:  (Uchuva, Pitahaya, Banano, Piña, Maracuyá, Durazno, Manzana, Mango, Fresa).<br>*Podemos producir cualquier tipo de fruta en pulpa pasteurizada."
+  },
+  {
+    "id": "pulpa-fruta-congelada",
+    "productImages": [
+      "/assets/food/images/fruta-congelada/fruta-congelada-1.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-2.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-3.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-4.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-5.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-6.jpg",
+      "/assets/food/images/fruta-congelada/fruta-congelada-7.jpg"
+    ],
+    "productName": "Pulpas de frutas congeladas",
+    "description": "Son obtenidas mediante la extracción y tamizado de la fracción comestible de las frutas frescas, sanas y maduras. Ofrecemos pulpas e todas las frutas que se cultivan en nuestro país en presentación congelada con azúcar o sin azúcar.<br>Este producto puede ser usado en la preparación de jugos y como materia prima en la elaboración de batidos, smoothies, postres, helados, salsas, bebidas, mermeladas, yogures entre otros.<br>Las pulpas de frutas congeladas se utilizan como materia prima para la preparación de jugos, smoothies, postres, salsas y mermeladas entre otros.<br>Sabores:  (Uchuva, Pitahaya, Banano, Piña, Maracuyá, Durazno, Manzana, Mango, Fresa).<br>*Podemos producir cualquier tipo de fruta en pulpa pasteurizada."
+  },
+  {
+    "id": "cafe",
+    "productImages": [
+      "/assets/food/images/cafe/cafe-1.jpg",
+      "/assets/food/images/cafe/cafe-2.jpg",
+      "/assets/food/images/cafe/cafe-3.jpg",
+      "/assets/food/images/cafe/cafe-4.jpg",
+      "/assets/food/images/cafe/cafe-5.jpg",
+      "/assets/food/images/cafe/cafe-6.jpg",
+      "/assets/food/images/cafe/cafe-7.jpg"
+    ],
+    "productName": "Café colombiano",
+    "description": "Trabajamos con diferentes cultivadores campesinos en Colombia, para acopiar el mejor café para exportación para los mercados internacionales.<br>Tenemos café trillado en presentación de grano tostado y molido, con el fin de que operadores y comercializadores internacionales manejen su propia marca en cada país.<br>CALIDAD: U.G.Q  ( Usuallity Good Quality).<br>PRESENTACIÓN: sacos de 70 kilogramos."
+  },
+  {
+    "id": "miel-yacon",
+    "productImages": [
+      "/assets/food/images/miel-yacon/miel-yacon-1.jpg",
+      "/assets/food/images/miel-yacon/miel-yacon-2.jpg",
+      "/assets/food/images/miel-yacon/miel-yacon-3.jpg",
+      "/assets/food/images/miel-yacon/miel-yacon-4.jpg",
+      "/assets/food/images/miel-yacon/miel-yacon-5.jpg",
+      "/assets/food/images/miel-yacon/miel-yacon-6.jpg"
+    ],
+    "productName": "Miel de yacón",
+    "description": "Este producto se obtiene mediante la extracción del jugo de yacón, el cual es concentrado a través de la evaporación en donde se concentran los sólidos con el fin de obtener la miel.<br>La Miel de Yacón puede ser usada como alternativa de endulzante natural por sus propiedades naturales, además puede ser usado en la industria alimentaria en preparaciones de repostería y panadería.<br>La miel de yacón es utilizada como endulzante natural en pastelería, postres, bebidas infusiones y como jarabe. Ideal para personas diabéticas ya que el Jarabe de yacón no sube los niveles de azúcar en el organismo al ser ingerido. Es un endulcolorante natural con bajas calorías y bajo índice glicémico."
+  },
+  {
+    "id": "extracto-ipecacuana",
+    "productImages": [
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-1.jpg",
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-2.jpg",
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-3.jpg",
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-4.jpg",
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-5.jpg",
+      "/assets/raw-materials/images/raiz-ipecacuana/ipecacuana-6.jpg"
+    ],
+    "productName": "Extracto de ipecacuana",
+    "description": "Manejamos diversas materias primas para el sector farmacéutico derivados de plantas : extractos-tinturas.<br>La planta de ipecacuana es una planta que pertenece a la familia de las rubiáceas, es de crecimiento lento, no mide más de 40 cm de alto y tiene hojas pequeñas de color verde brillante. Esta planta se da en zonas selváticas y la parte que es usada en medicina es la raíz, de ella son obtenidos varios alcaloides como la emetina.<br>El extracto de ipecacuana es una preparación concentrada y viscosa que se obtiene de la extracción del polvo de raíz de ipecacuana con etanol para obtener un nivel estandarizado de alcaloides.<br>Este producto es ampliamente utilizado por la industria farmacéutica como materia prima.<br>La tintura de ipecacuana es 14 veces más diluida y sirve como expectorante y emético, se utiliza como materia prima en la elaboración de jarabes para la tos."
+  },
+  {
+    "id": "miel-invertida",
+    "productImages": [
+      "/assets/raw-materials/images/miel/miel-1.jpg",
+      "/assets/raw-materials/images/miel/miel-2.jpg",
+      "/assets/raw-materials/images/miel/miel-3.jpg",
+      "/assets/raw-materials/images/miel/miel-4.jpg",
+      "/assets/raw-materials/images/miel/miel-5.jpg"
+    ],
+    "productName": "Miel invertida de caña",
+    "description": "La miel invertida de caña es una solución acuosa de miel virgen de caña de azúcar en la cual la sacarosa ha sido separada, parcial o totalmente en fructosa y glucosa a través de un proceso de hidrólisis, a diferentes concentraciones. Es utilizada en la industria de galletería y panificación, aporta un sabor característico de la caña de azúcar. Este producto esta certificado orgánico para la unión europea y Norteamérica."
   }
 ]

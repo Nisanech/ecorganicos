@@ -1,8 +1,7 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import { getFoodDetailById } from "@/application/use-cases/food-detail.use-case";
-import { FoodDetails } from "@/domain/entities/food-detail.interface";
+import { useState } from "react";
+
+import type { FoodDetails } from "@/domain/entities/food-detail.interface";
 
 interface NavigationButton {
   prevThumbnails: () => void;
@@ -18,6 +17,11 @@ interface ThumbnailCarousel {
   currentImage: number;
   handleThumbnailClick: (index: number) => void;
   responsive: "mobile" | "desktop";
+}
+
+interface FoodDetailProps {
+  data: FoodDetails;
+  background: string;
 }
 
 const NavigationButtons = ({
@@ -107,31 +111,9 @@ const ThumbnailCarousel = ({
   </div>
 );
 
-export default function FoodDetail() {
+export default function FoodDetail({data, background}: FoodDetailProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [startIndex, setStartIndex] = useState(0);
-
-  const [foodDetail, setFoodDetail] = useState<FoodDetails | null>(null);
-
-  const pathname: string = usePathname();
-
-  useEffect(() => {
-    if (pathname) {
-      // The last segment of the URL (ProductI)
-      const segments: string[] = pathname.split("/");
-
-      const productId: string = segments[segments.length - 1];
-
-      // Get product data from use case
-      const foodData: FoodDetails | null = getFoodDetailById(productId)
-
-      setFoodDetail(foodData);
-    }
-  }, [pathname]);
-
-  if (!foodDetail) {
-    return <div>Producto no encontrado o cargando...</div>;
-  }
 
   const prevThumbnails = () => {
     setStartIndex((prevIndex) => Math.max(0, prevIndex - 1));
@@ -139,7 +121,7 @@ export default function FoodDetail() {
 
   const nextThumbnails = () => {
     setStartIndex((prevIndex) =>
-      Math.min(foodDetail.productImages.length - 4, prevIndex + 1)
+      Math.min(data.productImages.length - 4, prevIndex + 1)
     );
   };
 
@@ -149,7 +131,7 @@ export default function FoodDetail() {
 
   return (
     <>
-      <main className={`bg-[#4EBC57]/15 w-full md:mt-[45px]`}>
+      <main className={`${background} w-full md:mt-[45px]`}>
         <div className={`px-1 py-6 md:mx-[20px] md:py-10 lg:py-20`}>
           <div className={`grid gap-4 md:grid-cols-2 md:gap-10 lg:gap-0`}>
             <div className={`order-1 md:order-1`}>
@@ -158,7 +140,7 @@ export default function FoodDetail() {
               >
                 <Image
                   className={`object-contain h-full w-full`}
-                  src={foodDetail.productImages[currentImage]}
+                  src={data.productImages[currentImage]}
                   alt={`Producto ${currentImage + 1}`}
                   width={400}
                   height={500}
@@ -172,12 +154,12 @@ export default function FoodDetail() {
                   nextThumbnails={nextThumbnails}
                   startIndex={startIndex}
                   responsive={"mobile"}
-                  productImages={foodDetail.productImages}
+                  productImages={data.productImages}
                 />
 
                 {/* Mobile carousel */}
                 <ThumbnailCarousel
-                  productImg={foodDetail.productImages}
+                  productImg={data.productImages}
                   startIndex={startIndex}
                   currentImage={currentImage}
                   handleThumbnailClick={handleThumbnailClick}
@@ -193,7 +175,7 @@ export default function FoodDetail() {
                 <h2
                   className={`font-kumbh text-xl text-darker-green font-semibold md:text-2xl lg:text-3xl`}
                 >
-                  {foodDetail.productName}
+                  {data.productName}
                 </h2>
 
                 <div className={`flex gap-3 my-7 items-center`}>
@@ -213,7 +195,7 @@ export default function FoodDetail() {
 
                 <div className={`flex flex-col gap-7`}>
                   {
-                    foodDetail.paragraphs?.map((paragraph) => (
+                    data.paragraphs?.map((paragraph: string) => (
                       <p
                         key={paragraph}
                         className={`font-kumbh text-[14px] text-eco-black font-normal lg:text-[16px]`}
@@ -232,12 +214,12 @@ export default function FoodDetail() {
                   nextThumbnails={nextThumbnails}
                   startIndex={startIndex}
                   responsive={"desktop"}
-                  productImages={foodDetail.productImages}
+                  productImages={data.productImages}
                 />
 
                 {/* Desktop carousel */}
                 <ThumbnailCarousel
-                  productImg={foodDetail.productImages}
+                  productImg={data.productImages}
                   startIndex={startIndex}
                   currentImage={currentImage}
                   handleThumbnailClick={handleThumbnailClick}
