@@ -33,7 +33,6 @@ export default function Home() {
         </div>
 
         {/* cards banner home */}
-
         <div className="absolute mt-[335px]">
           <CardHome />
         </div>
