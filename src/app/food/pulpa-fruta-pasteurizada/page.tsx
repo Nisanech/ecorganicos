@@ -3,6 +3,7 @@
 import { useFoodDetail } from "@/shared/hooks/useFoodDetail";
 import PulpaFrutaPasteurizadaBanner from "@/presentation/food/food-banners/PulpaFrutaPasteurizadaBanner";
 import FoodDetail from "@/presentation/food/FoodDetail";
+import DocumentationBanner from "@/presentation/food/DocumentationBanner";
 
 export default function PulpaFrutaPasteuriza() {
   const foodDetail = useFoodDetail();
@@ -16,6 +17,8 @@ export default function PulpaFrutaPasteuriza() {
       <PulpaFrutaPasteurizadaBanner />
 
       <FoodDetail data={foodDetail} background={"bg-[#4EBC57]/15"} />
+
+      <DocumentationBanner data={foodDetail["technical-data"]} background="bg-light-green" textColor="text-light-green" category="food"  />
     </>
   )
 }

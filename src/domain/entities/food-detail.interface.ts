@@ -4,4 +4,10 @@ export interface FoodDetails {
   productName: string;
   description: string;
   paragraphs?: string[];
+  "technical-data": TechnicalData[]
+}
+
+export interface TechnicalData {
+  title: string;
+  url: string
 }
