@@ -1,8 +1,8 @@
 "use client";
 
 import { useFoodDetail } from "@/shared/hooks/useFoodDetail";
-import FoodDetail from "@/presentation/food/components/FoodDetail";
-import CafeBanner from "@/presentation/food/components/banners/CafeBanner";
+import FoodDetail from "@/presentation/food/FoodDetail";
+import CafeBanner from "@/presentation/food/food-banners/CafeBanner";
 
 export default function Cafe() {
   const foodDetail = useFoodDetail();

@@ -34,6 +34,8 @@ const config: Config = {
         'metal': ['MetalFont', ...fontFamily.sans],
         'pacifico': ['PacificoFont', ...fontFamily.sans],
         'josefin': ['Josefin-Slab', ...fontFamily.sans],
+        'kreon': ['KreonFont', ...fontFamily.sans],
+        'new-tegomin': ['NewTegominFont', ...fontFamily.sans],
 
       },
     },

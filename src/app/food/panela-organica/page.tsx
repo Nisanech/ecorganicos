@@ -1,9 +1,9 @@
 "use client";
 
-import FoodDetail from "@/presentation/food/components/FoodDetail";
-import DocumentationBanner from "@/presentation/food/components/DocumentationBanner";
-import ProductsCarousel from "@/presentation/food/components/ProductsCarousel";
-import PanelaOrganicaBanner from "@/presentation/food/components/banners/PanelaOrganicaBanner";
+import FoodDetail from "@/presentation/food/FoodDetail";
+import DocumentationBanner from "@/presentation/food/DocumentationBanner";
+import ProductsCarousel from "@/presentation/food/ProductsCarousel";
+import PanelaOrganicaBanner from "@/presentation/food/food-banners/PanelaOrganicaBanner";
 import { useFoodDetail } from "@/shared/hooks/useFoodDetail";
 
 export default function PanelaOrganica() {

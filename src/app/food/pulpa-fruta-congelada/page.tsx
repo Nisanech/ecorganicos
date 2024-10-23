@@ -1,8 +1,8 @@
 "use client";
 
 import { useFoodDetail } from "@/shared/hooks/useFoodDetail";
-import FoodDetail from "@/presentation/food/components/FoodDetail";
-import PulpaFrutaCongeladaBanner from "@/presentation/food/components/banners/PulpaFrutaCongeladaBanner";
+import FoodDetail from "@/presentation/food/FoodDetail";
+import PulpaFrutaCongeladaBanner from "@/presentation/food/food-banners/PulpaFrutaCongeladaBanner";
 
 export default function PulpaFrutaCongelada() {
   const foodDetail = useFoodDetail();

@@ -127,8 +127,24 @@
 /* Josefin Slab */
 @font-face {
     font-family: Josefin-Slab;
-    src: url("/fonts/JosefinSlab/JosefinSlab-BoldItalic.ttf");
+    src: url("/fonts/JosefinSlab/JosefinSlab-BoldItalic.ttf") format('truetype');
     font-style: normal;
+}
+
+/* Kreon */
+@font-face {
+    font-family: "KreonFont";
+    src: url("/fonts/Kreon/Kreon-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* New Tegomin */
+@font-face {
+    font-family: "NewTegominFont";
+    src: url("/fonts/NewTegomin/NewTegomin-Regular.ttf") format('truetype');
+    font-style: normal;
+    font-weight: 400;
 }
 
 html {
