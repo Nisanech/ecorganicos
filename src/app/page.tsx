@@ -38,9 +38,9 @@ export default function Home() {
 
           {/* info "Que hacemos en ecorganicos */}
 
-          <div className="mt-28 pb-20 flex gap-6  text-darker-green w-[70%] mx-auto">
+          <div className="text-darker-green flex flex-col items-center p-[30px] mt-[470px] md:mt-[150px] md:mt-28 md:pb-20 md:gap-6 md:mx-auto md:pl-[70px] md:pr-[70px] md:flex-row xl:mt-[90px]">
 
-            <Image src="/assets/home/images/what-we-do.png" alt="row-icon" width={310} height={10} />
+            <img className=" w-[300px] h-[300px]" src="/assets/home/images/what-we-do.png" alt="row-icon"/>
           
             <div className="justify-center">
                 
@@ -65,7 +65,7 @@ export default function Home() {
 
           {/* logos marcas */}
 
-          <div className="bg-medium-green flex pt-6 pb-6 pl-20 pr-20 justify-between">
+          <div className="bg-medium-green pt-6 pb-6 grid grid-cols-2 grid-rows-2 gap-4 place-items-center sm:grid-cols-3 sm:grid-rows-2 gap-4 md:flex md:pl-[8px] md:pr-[8px] md:justify-between lg:pl-[60px] lg:pr-[60px]">
             <Image src="/assets/home/logos/logo 2.svg" alt="row-icon" width={95} height={100} />
             <Image src="/assets/home/logos/logo 3.svg" alt="row-icon" width={105} height={100} />
             <Image src="/assets/home/logos/logo 4.svg" alt="row-icon" width={85} height={100} />
@@ -79,7 +79,7 @@ export default function Home() {
 
           
           <div>
-            <div className="w-[40%] bg-[url('/assets/home/images/margen-1.png')] bg-contain bg-medium-green bg-no-repeat bg-left-top pb-20 pl-44 mt-16">
+            <div className="bg-[url('/assets/home/images/margen-1.png')] bg-no-repeat bg-left-top bg-contain bg-medium-green pb-20  mt-16 w-[100%] pl-[60px] md:pl-44 md:w-[40%]">
               <div className="pt-10 [text-shadow:_2px_2px_3px_#000000]">
                 <h3 className="font-kumbh font-semibold text-[30px] text-white">Últimas noticias</h3>
                 <h4 className="font-kumbh font-light text-[18px] text-white">DEL MUNDO ORGÁNICO</h4>

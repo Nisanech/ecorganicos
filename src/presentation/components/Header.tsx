@@ -130,9 +130,9 @@ export default function Header() {
                   </div>
                 ))}
 
-                <Link href="/noticias" className="font-jaldi font-bold text-[20px] text-dark-gray">Noticias</Link>
+                <Link href="/news" className="font-jaldi font-bold text-[20px] text-dark-gray">Noticias</Link>
 
-                <Link href="/contacto" className="font-jaldi font-bold text-[20px] text-dark-gray">Contacto</Link>
+                <Link href="/contact" className="font-jaldi font-bold text-[20px] text-dark-gray">Contacto</Link>
               </nav>
             </div>
           </div>
