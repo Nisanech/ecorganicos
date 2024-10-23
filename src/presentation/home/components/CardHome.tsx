@@ -9,7 +9,7 @@ const Card: React.FC<{ data: CardHome }> = ({ data }) => {
   return (
     <>
       <div>
-        <div className={`bg-eco-white flex flex-col justify-center w-[310px] border-2 border-medium-gray rounded-xl p-3 ${cardMarginClass}`}>
+        <div className={`bg-eco-white flex flex-col justify-center w-[310px] border-2 border-medium-gray rounded-xl p-3 lg:${cardMarginClass}`}>
           <div className={`flex items-center gap-5`}>
             <div className={`w-10 h-13 rounded-full p-1 m-0 bg-medium-green flex items-center justify-center`}>
               <Image src={`./assets/home/icons/${data.icon}`} alt={"Icono"} width={25} height={35} />
@@ -34,7 +34,7 @@ export default function CardHome() {
 
   return (
     <>
-      <div className={`flex gap-[10px]`}>
+      <div className={`grid grid-cols-1 grid-rows-2 mt-[450px] gap-4 md:grid-cols-2 md:grid-rows-2 md:mt-[40px] lg:grid-cols-3 xl:mt-[40px] xl:flex xl:gap-[10px]`}>
         {cardItems.map((card) => (
           <Card data={card} key={card.id} />
         ))}
