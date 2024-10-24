@@ -1,29 +1,46 @@
+"use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import { PopularProducts as PopularProductsInterface } from "@/domain/entities/popular-products.interface";
+import { useRouter } from "next/navigation";
 
 interface PopularProductsProps {
   data: PopularProductsInterface[];
 }
-const ProductCard = ({ product }: { product: PopularProductsInterface }) => (
-  <div className="bg-white rounded-lg shadow-md overflow-hidden">
-    <Image
-      src={product.productImage}
-      alt={product.productName}
-      className="w-full h-40 object-cover"
-      width={200}
-      height={160}
-    />
-    <div className="p-4 border-t-8 border-light-green">
-      <h3 className="font-semibold text-lg mb-1 text-darker-green font-kumbh">
-        {product.productName}
-      </h3>
-      <p className="text-light-green font-kumbh font-normal">
-        {product.category}
-      </p>
+
+const ProductCard = ({ product }: { product: PopularProductsInterface }) => {
+  const router = useRouter()
+
+  const handleClick = () => {
+    if (product.category === "Alimentos") {
+      router.push(`/food/${product.id}`)
+    } else if (product.category === "Materias primas") {
+      router.push(`/raw-materials/${product.id}`)
+    }
+  }
+
+  return (
+    <div
+      className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer"
+      onClick={handleClick}
+    >
+      <Image
+        src={product.productImage}
+        alt={product.productName}
+        className="w-full h-40 object-cover"
+        width={200}
+        height={160}
+      />
+      <div className="p-4 border-t-8 border-light-green">
+        <h3 className="font-semibold text-lg mb-1 text-darker-green font-kumbh">
+          {product.productName}
+        </h3>
+        <p className="text-light-green font-kumbh font-normal">{product.category}</p>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function PopularProducts({ data }: PopularProductsProps) {
   const [startIndex, setStartIndex] = useState(0);
