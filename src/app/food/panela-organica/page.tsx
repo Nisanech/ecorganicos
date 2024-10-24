@@ -1,16 +1,17 @@
 "use client";
 
-import FoodDetail from "@/presentation/food/FoodDetail";
-import DocumentationBanner from "@/presentation/food/DocumentationBanner";
-import ProductsCarousel from "@/presentation/food/ProductsCarousel";
-import PanelaOrganicaBanner from "@/presentation/food/food-banners/PanelaOrganicaBanner";
 import { useFoodDetail } from "@/shared/hooks/useFoodDetail";
 
-export default function PanelaOrganica() {
-  const foodDetail = useFoodDetail();
-  console.log("PanelaOrganica", foodDetail);
-  
+import PanelaOrganicaBanner from "@/presentation/food/food-banners/PanelaOrganicaBanner";
+import FoodDetail from "@/presentation/food/FoodDetail";
+import DocumentationBanner from "@/presentation/food/DocumentationBanner";
+import PopularProducts from "@/presentation/food/PopularProducts";
 
+export default function PanelaOrganica() {
+  const foodDetail = useFoodDetail().foodDetail;
+  
+  const popularProducts = useFoodDetail().popularProducts;
+  
   if (!foodDetail) {
     return <div>Producto no encontrado o cargando...</div>;
   }
@@ -23,7 +24,7 @@ export default function PanelaOrganica() {
 
       <DocumentationBanner data={foodDetail["technical-data"]} background="bg-light-green" textColor="text-light-green" category="food"  />
 
-      <ProductsCarousel />
+      <PopularProducts data={popularProducts} />
     </>
   )
 }

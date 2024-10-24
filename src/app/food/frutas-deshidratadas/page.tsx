@@ -6,7 +6,7 @@ import FrutasDeshidratadasBanner from "@/presentation/food/food-banners/FrutasDe
 import DocumentationBanner from "@/presentation/food/DocumentationBanner";
 
 export default function FrutasDeshidratadas(){
-  const foodDetail = useFoodDetail();
+  const foodDetail = useFoodDetail().foodDetail;
 
   if (!foodDetail) {
     return <div>Producto no encontrado o cargando...</div>;

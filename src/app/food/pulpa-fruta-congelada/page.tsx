@@ -6,7 +6,7 @@ import PulpaFrutaCongeladaBanner from "@/presentation/food/food-banners/PulpaFru
 import DocumentationBanner from "@/presentation/food/DocumentationBanner";
 
 export default function PulpaFrutaCongelada() {
-  const foodDetail = useFoodDetail();
+  const foodDetail = useFoodDetail().foodDetail;
 
   if (!foodDetail) {
     return <div>Producto no encontrado o cargando...</div>;

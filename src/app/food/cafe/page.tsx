@@ -6,7 +6,7 @@ import CafeBanner from "@/presentation/food/food-banners/CafeBanner";
 import DocumentationBanner from "@/presentation/food/DocumentationBanner";
 
 export default function Cafe() {
-  const foodDetail = useFoodDetail();
+  const foodDetail = useFoodDetail().foodDetail;
 
   if (!foodDetail) {
     return <div>Producto no encontrado o cargando...</div>;
