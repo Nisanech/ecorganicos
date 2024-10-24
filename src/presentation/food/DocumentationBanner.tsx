@@ -14,8 +14,6 @@ export default function DocumentationBanner({
   textColor,
   category,
 }: TechnicalSheetProps) {
-  console.log("data", data);
-  console.log("background", background);
 
   const openSheet = (url: string) => {
     window.open(url, "_blank");
