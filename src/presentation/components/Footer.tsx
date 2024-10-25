@@ -19,8 +19,8 @@ export default function Footer() {
 
               <div className="flex flex-col gap-2">
                 <p className="font-semibold text-neon-green">Otros</p>
-                <a href="" className="text-white">Noticias</a>
-                <a href="" className="text-white">Contacto</a>
+                <a href="/news" className="text-white">Noticias</a>
+                <a href="/contact" className="text-white">Contacto</a>
               </div>
             </div>
         </div>
